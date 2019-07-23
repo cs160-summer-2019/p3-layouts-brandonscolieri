@@ -12,9 +12,58 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+		<style type="text/css">
+
+
+			.flex-container {
+			flex-direction: column;
+			padding:0;
+			margin: 0;
+			list-style: none;
+
+			
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+
+			/* align-items: center; */
+			
+			/* -webkit-flex-flow: column wrap;
+			flex-flow: column wrap; */
+
+			-webkit-flex-flow: row wrap;
+			flex-flow: row wrap;
+
+			justify-content: space-evenly;
+			}
+
+			.flex-item {
+			background: orange;
+			padding: 0px;
+			width: 200px;
+			height: 1000px;
+			/* margin-top: 60px; */
+			/* margin-bottom: 60px; */
+			/* margin-right: 100px;
+			margin-left: 100px; */
+			}
+	
+	
+		</style>
 	</head>
-	<body>
-		<!-- Your layout here -->
+	<body style="background-color: purple; text-align:center">
+			<ul class="flex-container">
+			<li class="flex-item"></li>
+			<li class="flex-item"></li>
+			<li class="flex-item"></li>
+			<!-- <li class="flex-item"></li>
+			<li class="flex-item"></li>
+			<li class="flex-item"></li>
+			<li class="flex-item"></li>
+			<li class="flex-item"></li> -->
+			</ul>
 
 	</body>
 </html>
